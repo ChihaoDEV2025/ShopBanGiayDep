@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ShopBanGiay</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_admin_trang_chu">AdminTrangChu</string>
+    <string name="title_activity_gio_hang">GioHang</string>
+    <string name="title_activity_dang_nhap">DangNhap</string>
+    <string name="title_activity_dang_ky">DangKy</string>
+    <string name="title_activity_trang_chao_mung">TrangChaoMung</string>
+    <string name="title_activity_trang_chu">TrangChu</string>
+    <string name="title_activity_hien_thi_san_pham">HienThiSanPham</string>
+    <string name="title_activity_chi_tiet_san_pham">ChiTietSanPham</string>
+    <string name="title_activity_thanh_toan">ThanhToan</string>
+    <string name="title_activity_ho_so_nguoi_dung">HoSoNguoiDung</string>
+
+</resources>

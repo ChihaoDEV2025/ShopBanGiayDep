@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/admin_bg"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_admin_header"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Quản lý sản phẩm"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtTimKiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/bg_admin_card"
+        android:hint="Tìm theo tên hoặc mã sản phẩm..."
+        android:padding="12dp"
+        android:textColor="@color/admin_text"
+        android:textColorHint="@color/admin_text_muted" />
+
+    <Button
+        android:id="@+id/btnThemMoi"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/edtTimKiem"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_admin_button_success"
+        android:text="+ Thêm sản phẩm"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/btnThemMoi"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp" />
+
+</RelativeLayout>

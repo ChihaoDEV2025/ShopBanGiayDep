@@ -1,16 +1,129 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".TrangChu" >
+    android:orientation="vertical"
+    android:background="#F5F5F5">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!-- HEADER -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#4CAF50"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvTenShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HHK Shop"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvTenNguoiDung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTenShop"
+            android:text="Xin chào"
+            android:textColor="#E8F5E9"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="#FFFFFF"
+            android:padding="4dp"
+            android:src="@android:drawable/sym_def_app_icon"/>
+    </RelativeLayout>
+
+    <!-- SEARCH + ACTION -->
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:background="#FFFFFF"
+        android:padding="10dp">
 
-</RelativeLayout>
+        <!-- CART -->
+        <RelativeLayout
+            android:id="@+id/layoutCart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/imgGioHang"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+              />
+
+            <TextView
+                android:id="@+id/tvSoLuongGio"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:background="#E53935"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <!-- FAVORITE -->
+        <ImageView
+            android:id="@+id/imgYeuThich"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/layoutCart"
+            android:layout_marginRight="10dp"
+            android:src="@android:drawable/btn_star_big_off"/>
+
+        <!-- SEARCH -->
+        <EditText
+            android:id="@+id/edtTimKiem"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/imgYeuThich"
+            android:hint="Tìm sản phẩm..."
+            android:background="#EEEEEE"
+            android:paddingLeft="10dp"/>
+    </RelativeLayout>
+
+    <!-- BRAND FILTER -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/layoutThuongHieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/btnTatCa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tất cả"/>
+            <Button android:id="@+id/btnNike" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nike"/>
+            <Button android:id="@+id/btnAdidas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Adidas"/>
+            <Button android:id="@+id/btnVans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vans"/>
+            <Button android:id="@+id/btnConverse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Converse"/>
+            <Button android:id="@+id/btnPuma" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Puma"/>
+            <Button android:id="@+id/btnNewBalance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Balance"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- PRODUCT LIST -->
+    <ListView
+        android:id="@+id/lvSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#DDDDDD"
+        android:dividerHeight="1dp"
+        android:padding="8dp"/>
+
+</LinearLayout>

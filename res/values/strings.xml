@@ -14,5 +14,22 @@
     <string name="title_activity_chi_tiet_san_pham">ChiTietSanPham</string>
     <string name="title_activity_thanh_toan">ThanhToan</string>
     <string name="title_activity_ho_so_nguoi_dung">HoSoNguoiDung</string>
+    <string name="title_activity_admin_san_pham">AdminSanPham</string>
+    <string name="title_activity_admin_don_hang">AdminDonHang</string>
+    <string name="title_activity_admin_nguoi_dung">AdminNguoiDung</string>
+    <string name="title_activity_admin_chi_tieu">AdminChiTieu</string>
+    <string name="title_activity_admin_thong_ke">AdminThongKe</string>
+    <string name="title_activity_don_hang_cua_toi">DonHangCuaToi</string>
+    
+    <string name="dang_nhap">Đăng nhập</string>
+    <string name="dang_ky">Đăng ký</string>
+    <string name="email">Email</string>
+    <string name="mat_khau">Mật khẩu</string>
+    <string name="ho_va_ten">Họ và tên</string>
+    <string name="so_dien_thoai">Số điện thoại</string>
+    <string name="luu">Lưu</string>
+    <string name="huy">Hủy</string>
+    <string name="xac_nhan">Xác nhận</string>
+    <string name="ten_shop">HHK - Shoe Shop</string>
 
 </resources>

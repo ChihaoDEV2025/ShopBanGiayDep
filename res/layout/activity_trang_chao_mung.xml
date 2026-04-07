@@ -6,11 +6,43 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".TrangChaoMung" >
-
+    tools:context=".TrangChaoMung_Activity" >
+ 
     <TextView
+        android:id="@+id/tvTenShop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="HHK - Shoe Shop"
+        android:textSize="28sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+ 
+    <Button
+        android:id="@+id/btnDangNhap"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="140dp"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="#FFFFFF"
+        android:background="#FF6B35"
+        android:textStyle="bold"/>
+ 
+    <Button
+        android:id="@+id/btnDangKy"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:text="ĐĂNG KÝ"
+        android:textColor="#FF6B35"
+        android:background="#FFFFFF"
+        android:textStyle="bold"/>
+ 
+   
 
 </RelativeLayout>

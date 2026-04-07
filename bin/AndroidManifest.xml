@@ -4,6 +4,9 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
@@ -14,7 +17,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.shopbangiay.KhachHang.TrangChu"
+            android:name="com.example.shopbangiay.TrangChaoMung_Activity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,44 +26,64 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.shopbangiay.Admin.AdminTrangChu"
+            android:name="com.example.shopbangiay.Admin.AdminTrangChu_Activity"
             android:label="@string/title_activity_admin_trang_chu" >
         </activity>
         <activity
-            android:name="com.example.shopbangiay.GioHang"
+            android:name="com.example.shopbangiay.GioHang_Activity"
             android:label="@string/title_activity_gio_hang" >
         </activity>
         <activity
-            android:name="com.example.shopbangiay.DangNhap"
+            android:name="com.example.shopbangiay.DangNhap_Activity"
             android:label="@string/title_activity_dang_nhap" >
         </activity>
         <activity
-            android:name="com.example.shopbangiay.DangKy"
+            android:name="com.example.shopbangiay.DangKy_Activity"
             android:label="@string/title_activity_dang_ky" >
         </activity>
         <activity
-            android:name="com.example.shopbangiay.TrangChaoMung"
+            android:name="com.example.shopbangiay.TrangChaoMung_Activity"
             android:label="@string/title_activity_trang_chao_mung" >
         </activity>
         <activity
-            android:name="com.example.shopbangiay.TrangChu"
+            android:name="com.example.shopbangiay.TrangChu_Activity"
             android:label="@string/title_activity_trang_chu" >
         </activity>
         <activity
-            android:name="com.example.shopbangiay.HienThiSanPham"
-            android:label="@string/title_activity_hien_thi_san_pham" >
-        </activity>
-        <activity
-            android:name="com.example.shopbangiay.ChiTietSanPham"
+            android:name="com.example.shopbangiay.ChiTietSanPham_Activity"
             android:label="@string/title_activity_chi_tiet_san_pham" >
         </activity>
         <activity
-            android:name="com.example.shopbangiay.ThanhToan"
+            android:name="com.example.shopbangiay.ThanhToan_Activity"
             android:label="@string/title_activity_thanh_toan" >
         </activity>
         <activity
-            android:name="com.example.shopbangiay.HoSoNguoiDung"
+            android:name="com.example.shopbangiay.HoSoNguoiDung_Activity"
             android:label="@string/title_activity_ho_so_nguoi_dung" >
+        </activity>
+        <activity
+            android:name="com.example.shopbangiay.Admin.AdminSanPham_Activity"
+            android:label="@string/title_activity_admin_san_pham" >
+        </activity>
+        <activity
+            android:name="com.example.shopbangiay.Admin.AdminDonHang_Activity"
+            android:label="@string/title_activity_admin_don_hang" >
+        </activity>
+        <activity
+            android:name="com.example.shopbangiay.Admin.AdminNguoiDung_Activity"
+            android:label="@string/title_activity_admin_nguoi_dung" >
+        </activity>
+        <activity
+            android:name="com.example.shopbangiay.Admin.AdminChiTieu_Activity"
+            android:label="@string/title_activity_admin_chi_tieu" >
+        </activity>
+        <activity
+            android:name="com.example.shopbangiay.Admin.AdminThongKe_Activity"
+            android:label="@string/title_activity_admin_thong_ke" >
+        </activity>
+        <activity
+            android:name="com.example.shopbangiay.DonHangCuaToi"
+            android:label="@string/title_activity_don_hang_cua_toi" >
         </activity>
     </application>
 

@@ -1,16 +1,112 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".DangKy" >
+    android:background="#F5F5F5"
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:orientation="vertical"
+        android:padding="20dp">
 
-</RelativeLayout>
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tạo Tài Khoản"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FF6B35"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- FULL NAME -->
+        <EditText
+            android:id="@+id/edtHovaTen"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Họ và tên *"
+            android:background="#EEEEEE"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- EMAIL -->
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email *"
+            android:inputType="textEmailAddress"
+            android:background="#EEEEEE"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- PHONE -->
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Số điện thoại"
+            android:inputType="phone"
+            android:background="#EEEEEE"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- PASSWORD -->
+        <EditText
+            android:id="@+id/edtMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Mật khẩu *"
+            android:inputType="textPassword"
+            android:background="#EEEEEE"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- CONFIRM PASSWORD -->
+        <EditText
+            android:id="@+id/edtXacNhanMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Xác nhận mật khẩu *"
+            android:inputType="textPassword"
+            android:background="#EEEEEE"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- MESSAGE -->
+        <TextView
+            android:id="@+id/tvThongBao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- REGISTER BUTTON -->
+        <Button
+            android:id="@+id/btnDangKy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="ĐĂNG KÝ"
+            android:textStyle="bold"
+            android:background="#FF6B35"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"/>
+
+        <!-- GO TO LOGIN -->
+        <TextView
+            android:id="@+id/tvDiDangNhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đã có tài khoản? Đăng nhập"
+            android:textColor="#555"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
